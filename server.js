@@ -11,7 +11,7 @@ const app = express();
 //Instantiate unique id
 const uid = new ShortUniqueId();
 // Specify on which port the Express.js server will run
-const PORT = 3001;
+const PORT = process.env.PORT||3001;
 // Add middleware body parser
 app.use(express.json());
 // Static middleware pointing to the public folder
